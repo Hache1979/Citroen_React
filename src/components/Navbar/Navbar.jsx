@@ -36,3 +36,4 @@ export function NavBoot() {
     );
 }
 
+export default NavBoot;
