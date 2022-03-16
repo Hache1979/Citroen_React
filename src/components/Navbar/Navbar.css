@@ -1,0 +1,49 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.logo-ac{
+    font-size: 2rem;
+}
+
+.font-face-cb {
+    font-family: "CitroenBlack";
+    font-size: 1.2rem;
+}
+
+.search{
+    font-size: 1.2rem;
+}
+
+.color-nav{
+    background-color: rgb(255, 65, 45);
+}
+
+.search-btn{
+    color: white;
+    border-color: white;
+}
+
+.font-face-cl{
+    font-family: "CitroenLight";
+    font-size: 1.1rem;
+    font-weight: bold;
+}
+
+.search-btn:hover{
+    background-color: rgb(3, 65, 3);
+}
+
+.btn-hover:hover{
+    background-color: rgba(145, 54, 54, 0.75);
+}
+
+.btn-hover{
+    border-radius: 4px;
+    transition: 0.6s;
+}
+
+.navbar-light .navbar-toggler {
+    border-color: white;
+}
