@@ -1,0 +1,16 @@
+.card-container{
+    margin-top: 2rem;
+    margin-left: 1.5rem;
+    font-family: "CitroenBlack";
+}
+
+.button-style{
+    background-color: orangered;
+    border-color: orangered;
+}
+
+.btn:hover{
+    background-color: green;
+    border-color: green;
+}
+

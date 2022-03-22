@@ -14,10 +14,10 @@ code {
 
 @font-face {
   font-family: "CitroenBlack";
-  src: url("./fonts/Citroen/Citroen-Black.ttf") format("truetype");
+  src: url("./assets/fonts/Citroen/Citroen-Black.ttf") format("truetype");
 }
 
 @font-face {
   font-family: "CitroenLight";
-  src: url("./fonts/Citroen/Citroen_Light.ttf") format("truetype");
+  src: url("./assets/fonts/Citroen/Citroen_Light.ttf") format("truetype");
 }

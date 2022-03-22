@@ -1,8 +1,3 @@
-* {
-    margin: 0;
-    box-sizing: border-box;
-}
-
 .logo-ac{
     font-size: 2rem;
 }
@@ -27,7 +22,7 @@
 
 .font-face-cl{
     font-family: "CitroenLight";
-    font-size: 1.1rem;
+    font-size: 1rem;
     font-weight: bold;
 }
 
@@ -47,3 +42,4 @@
 .navbar-light .navbar-toggler {
     border-color: white;
 }
+

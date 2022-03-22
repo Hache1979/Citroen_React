@@ -1,12 +1,13 @@
 import React from 'react';
 import './Navbar.css';
 import { Navbar, Nav, Container, Form, FormControl, Button } from 'react-bootstrap';
+import CartWidget from '../CartWidget/CartWidget';
 
-export function NavBoot() {
+function NavBoot() {
     return (
         <div>
             <Navbar expand="lg" className="color-nav font-face-cb">
-                <Container fluid>
+                <Container fluid className='container-fluid1'>
                     <Navbar.Brand className= "logo-ac text-white" href="#">CITROËN</Navbar.Brand>
                     <Navbar.Toggle aria-controls="navbarScroll"/>
                     <Navbar.Collapse id="navbarScroll">

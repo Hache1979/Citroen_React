@@ -1,0 +1,12 @@
+.cart-widget{
+   float: right;
+}
+
+.cart-title{
+    font-family: CitroenLight;
+    font-size: 2.1rem;
+    padding-left: 2rem;
+    padding-top: 2rem;
+    font-weight: bold;
+    text-align: center;
+}
