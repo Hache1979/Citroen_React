@@ -48,3 +48,17 @@ export const carList = [
         stock: 3,
         }
     ]
+
+
+// const getCarList = () => {
+//     return new Promise((resolve, reject) => {
+//         setTimeout(() => {
+//             resolve(carList)
+//         }, 1000);
+//     });
+// };
+
+// console.log(getCarList().then((data) => {
+//     console.log(data)
+// })
+// );
