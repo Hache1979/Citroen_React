@@ -12,7 +12,7 @@ function Card(props) {
                 <Card1.Img variant="top" src={imageName} />
                 <Card1.Body>
                     <Card1.Title>{props.carDetails.nombre}</Card1.Title>
-                    <Card1.Text>{props.carDetails.moneda} {new Intl.NumberFormat().format(props.carDetails.precio)+ ".-"}</Card1.Text>
+                    <Card1.Text>{props.carDetails.moneda} {new Intl.NumberFormat('de-DE').format(props.carDetails.precio)+ ".-"}</Card1.Text>
                     <Card1.Text>Stock: {props.carDetails.stock}</Card1.Text>
                     <ItemsCount stockUnits={props.carDetails.stock} />
                 </Card1.Body>
