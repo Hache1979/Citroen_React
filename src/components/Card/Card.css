@@ -4,13 +4,3 @@
     font-family: "CitroenBlack";
 }
 
-.button-style{
-    background-color: orangered;
-    border-color: orangered;
-}
-
-.btn:hover{
-    background-color: green;
-    border-color: green;
-}
-

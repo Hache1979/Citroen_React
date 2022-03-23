@@ -5,7 +5,7 @@ import CartWidget from '../CartWidget/CartWidget';
 
 function NavBoot() {
     return (
-        <div>
+        <div className='grid-container'>
             <Navbar expand="lg" className="color-nav font-face-cb">
                 <Container fluid className='container-fluid1'>
                     <Navbar.Brand className= "logo-ac text-white" href="#">CITROËN</Navbar.Brand>

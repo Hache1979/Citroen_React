@@ -1,0 +1,36 @@
+.button-style{
+    background-color:  darkorange;
+    border-color:  darkorange;
+}
+
+.btn:hover{
+    background-color: green;
+    border-color: green;
+}
+
+.btn-buy{
+    margin-left: 3vh;
+}
+
+.btn-dec{
+    margin-left: 0.6vh;
+    background-color: red;
+    border-color: red;
+    padding-right: 1.8vh;
+    padding-left: 1.8vh;
+}
+
+.btn-dec:hover{
+    background-color: rgb(107, 5, 5);
+    border-color: rgb(107, 5, 5);
+}
+
+.btn-plus{
+    background-color: darkorange;
+    border-color: darkorange;
+}
+
+.units-quantity{
+    font-family: citroenLight;
+    font-weight: bold;
+}
