@@ -1,0 +1,22 @@
+.fonti{
+    font-family: "CitroenBlack";
+}
+
+.item-detail-description{
+    font-family: "CitroenLight";
+    font-size: 0.9rem;
+    font-weight: bold;
+}
+
+.item-detail-caracteristicas{
+    font-family: "CitroenLight";
+    font-size: 0.9rem;
+}
+
+.item-detail{
+    margin-left: 20px;
+}
+
+li::marker {
+    color: darkorange; 
+}

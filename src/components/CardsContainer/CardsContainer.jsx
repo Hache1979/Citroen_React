@@ -25,7 +25,7 @@ function SalesOffer() {
 
     return (
         <div className="salesOffer-container">
-            {citroen.map(car => <Card carDetails={car} />)}
+            {citroen.map(car => <Card key={car.id} carDetails={car} />)}
         </div>
     )
 }

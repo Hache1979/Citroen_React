@@ -1,0 +1,82 @@
+[
+    {
+        "id":1,
+        "nombre":"C4 CACTUS SHINE",
+        "precio":3475000,
+        "moneda": "$",
+        "imagenUrl":"Of_C4.jpg",
+        "stock": 9,
+        "TituloCarcteristicas": "CARACTERISTICAS Y EQUIPAMIENTO:",
+        "Carac1":"Cámara de retroceso.",
+        "Carac2":"6 Airbags.",
+        "Carac3":"Regulador y limitador de velocidad.",
+        "Carac4":"Sistema multimedia con pantalla táctil de 7' con Mirror-Screen."
+        },
+        {
+        "id":2,
+        "nombre":"C5 AIRCROSS",
+        "precio":7810000,
+        "moneda": "$",
+        "imagenUrl":"Of_C5AC.jpg",
+        "stock": 4,
+        "TituloCarcteristicas": "CARACTERISTICAS Y EQUIPAMIENTO:",
+        "Carac1":"Suspensión de amortiguadores progresivos hidráulicos.",
+        "Carac2":"Asientos Advanced Confort.",
+        "Carac3":"Habitabilidad y modularidad.",
+        "Carac4":"14 ayudas a la conducción."
+        },
+        {
+        "id":3,
+        "nombre":"BERLINGO VP",
+        "precio":3540000,
+        "moneda": "$",
+        "imagenUrl": "Of_BerlingoVp.jpg",
+        "stock": 15,
+        "TituloCarcteristicas": "CARACTERISTICAS Y EQUIPAMIENTO:",
+        "Carac1":"Conectividad Bluetooth con mandos al volante y entradas USB y Auxiliar.",
+        "Carac2":"Doble Puerta Lateral en todas las versiones para facilitar el acceso.",
+        "Carac3":"Inigualable capacidad de baúl de 624 litros.",
+        "Carac4":"Frenos ABS con Repartidor Electrónico de Frenado."
+        },
+        {
+        },
+        {
+        "id":4,
+        "nombre":"BERLINGO VU",
+        "precio":2571000,
+        "moneda": "$",
+        "imagenUrl":"Of_BerlingoVu.jpg",
+        "stock": 12,
+        "TituloCarcteristicas": "CARACTERISTICAS Y EQUIPAMIENTO:",
+        "Carac1":"Motor nafta 1.6 Vti 115 CV con caja manual de 5 velocidades.",
+        "Carac2":"Carga útil: 800 kg.",
+        "Carac3":"Frenos ABS / Dirección asistida.",
+        "Carac4":"Volumen de Carga: 3m3."
+        },
+        {
+        "id":5,
+        "nombre":"CITROËN JUMPER",
+        "precio":5597000,
+        "moneda": "$",
+        "imagenUrl":"Of_Jumper.jpg",
+        "stock": 4,
+        "TituloCarcteristicas": "CARACTERISTICAS Y EQUIPAMIENTO:",
+        "Carac1":"Motor diésel 2.2 HDi 130 CV con caja manual de 6 velocidades.",
+        "Carac2":"Limitador y regulador de velocidad.",
+        "Carac3":"Control de estabilidad (ESP) con HILL ASSIST.",
+        "Carac4":"Sensores de estacionamiento trasero sonoro."
+        },
+        {
+        "id":6,
+        "nombre":"CITROËN JUMPY",
+        "precio":4705000,
+        "moneda": "$",
+        "imagenUrl":"Of_Jumpy.jpg",
+        "stock": 3,
+        "TituloCarcteristicas": "CARACTERISTICAS Y EQUIPAMIENTO:",
+        "Carac1":"Motor diésel 1.6 HDi 115 CV con caja manual de 6 velocidades.",
+        "Carac2":"Control de estabilidad (ESP) con HILL ASSIST.",
+        "Carac3":"Limitador y regulador de velocidad.",
+        "Carac4":"Levantavidrios y regulación de espejos exteriores eléctricos."
+        }
+    ]
