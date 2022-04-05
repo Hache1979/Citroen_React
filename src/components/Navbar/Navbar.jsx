@@ -1,25 +1,33 @@
 import React from 'react';
 import './Navbar.css';
-import { Navbar, Nav, Container, Form, FormControl, Button } from 'react-bootstrap';
-import CartWidget from '../CartWidget/CartWidget';
+import { Navbar, Nav, Container, Form, FormControl, Button, Dropdown } from 'react-bootstrap';
+import { Link } from 'react-router-dom';
 
 function NavBoot() {
     return (
         <div className='grid-container'>
             <Navbar expand="lg" className="color-nav font-face-cb">
                 <Container fluid className='container-fluid1'>
-                    <Navbar.Brand className= "logo-ac text-white" href="#">CITROËN</Navbar.Brand>
-                    <Navbar.Toggle aria-controls="navbarScroll"/>
+                    <Navbar.Brand className="logo-ac text-white" href="#"><Link className="navbar-custom" to={'/'}>CITROËN</Link></Navbar.Brand>
+                    <Navbar.Toggle aria-controls="navbarScroll" />
                     <Navbar.Collapse id="navbarScroll">
                         <Nav
-                            className="me-auto my-2 my-lg-0" 
+                            className="me-auto my-2 my-lg-0"
                             style={{ maxHeight: '250px' }}
                             navbarScroll>
-                            <Nav.Link className="text-white btn-hover" href="#action1">HOME</Nav.Link>
-                            <Nav.Link className="text-white btn-hover" href="#action2">VEHÍCULOS</Nav.Link>
-                            <Nav.Link className="text-white btn-hover" href="#action3">OFERTAS</Nav.Link>
-                            <Nav.Link className="text-white btn-hover" href="#action4">UNIVERSO CITROËN</Nav.Link>
-                            <Nav.Link className="text-white btn-hover" href="#action5">CONTACTO</Nav.Link>
+                            <Nav.Link className="text-white btn-hover" href=""><Link className="navbar-custom" to={'/'}>HOME</Link></Nav.Link>
+                            <Nav.Link className="text-white btn-hover" href=""><Link className="navbar-custom" to={'/Vehiculos'}>VEHICULOS</Link></Nav.Link>
+                            <Dropdown className="drop-menu-color">
+                                <Dropdown.Toggle className="drop-menu bck-color" variant="success" id="dropdown-basic"><Link className="navbar-custom" to={'/Ofertas'}>OFERTAS</Link>
+                                </Dropdown.Toggle>
+                                <Dropdown.Menu>
+                                    <Dropdown.Item href="#/action-1"><Link className='drop-down-sections' to={'/Ofertas/Category/Particulares'}>PARTICULARES</Link></Dropdown.Item>
+                                    <Dropdown.Item href="#/action-2"><Link className='drop-down-sections' to={'/Ofertas/Category/Utilitarios'}>UTILITARIOS</Link></Dropdown.Item>
+                                    <Dropdown.Item href="#/action-2"><Link className='drop-down-sections' to={'/Ofertas'}>OFERTA COMPLETA</Link></Dropdown.Item>
+                                </Dropdown.Menu>
+                            </Dropdown>
+                            <Nav.Link className="text-white btn-hover" href=""><Link className="navbar-custom" to={'/UniversoCitroen'}>UNIVERSO CITROËN</Link></Nav.Link>
+                            <Nav.Link className="text-white btn-hover" href=""><Link className="navbar-custom" to={'/Contacto'}>CONTACTO</Link></Nav.Link>
                         </Nav>
                         <Form className="d-flex">
                             <FormControl

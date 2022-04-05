@@ -18,16 +18,17 @@
 .search-btn{
     color: white;
     border-color: white;
+    font-size: 1.2rem;
+}
+
+.search-btn:hover{
+    background-color: green !important;
 }
 
 .font-face-cl{
     font-family: "CitroenLight";
     font-size: 1rem;
     font-weight: bold;
-}
-
-.search-btn:hover{
-    background-color: rgb(3, 65, 3);
 }
 
 .btn-hover:hover{
@@ -41,5 +42,41 @@
 
 .navbar-light .navbar-toggler {
     border-color: white;
+}
+
+.navbar-custom{
+    color: white;
+    text-decoration: none;
+}
+
+.navbar-custom:hover{
+    color: white;
+}
+
+.drop-menu{
+    background-color: rgb(255, 65, 45);
+    border-color: rgb(255, 65, 45);
+    font-size: 1.22rem;
+}
+
+.btn-success.dropdown-toggle:hover {
+    background-color: rgba(145, 54, 54, 0.75);
+    border-color: rgba(145, 54, 54, 0.75);
+}
+
+.drop-down-sections{
+    color: #333333;
+    text-decoration: none;
+    font-family: "CitroenBlack";
+    font-size: small;
+}
+
+.drop-down-sections:hover{
+    color: #333333;
+}
+
+.btn-check:active+.btn-success, .btn-check:checked+.btn-success, .btn-success.active, .btn-success:active, .show>.btn-success.dropdown-toggle{
+    background-color:rgba(145, 54, 54, 0.75);
+    border-color: rgba(145, 54, 54, 0.75);
 }
 

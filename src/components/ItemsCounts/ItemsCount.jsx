@@ -2,7 +2,6 @@ import React, { useState } from 'react';
 import { Button } from 'react-bootstrap';
 import './ItemsCount.css';
 
-
 function ItemsCount({stockUnits} ) {
     const [count, setCount]= useState (1)
 

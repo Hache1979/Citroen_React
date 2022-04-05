@@ -12,7 +12,7 @@ function CartWidget() {
 
     return (
         <div>
-            <h1 className="cart-title">VEHÍCULOS PARTICULARES Y UTILITARIOS</h1>
+            <h1 className="cart-title">CITROËN STORE</h1>
             <div style={{ display: "block", padding: 30 }}>
                 <div className="cart-widget">
                     <Badge color="secondary" badgeContent={itemCount}>

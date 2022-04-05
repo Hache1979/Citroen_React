@@ -1,6 +1,7 @@
 .button-style{
     background-color:  darkorange;
     border-color:  darkorange;
+    font-family: "CitroenBlack";
 }
 
 .btn:hover{
@@ -31,6 +32,7 @@
 }
 
 .units-quantity{
-    font-family: citroenLight;
-    font-weight: bold;
+    font-family: "CitroenLight";
+    font-size: 1rem;
+    margin-bottom: 0.4rem;
 }

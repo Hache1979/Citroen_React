@@ -1,7 +1,12 @@
-import React, {useState, useEffect} from 'react';
+import React, { useState, useEffect } from 'react';
 import './ItemDetailContainer.css';
+import { useParams } from 'react-router-dom';
+import DetailPage from '../DetailPage/DetailPage';
+
 
 export default function ItemDetailContainer() {
+
+    const { id } = useParams();
     const [item, setItem] = useState({})
 
     useEffect(() => {
@@ -10,28 +15,21 @@ export default function ItemDetailContainer() {
             console.log(res)
             const data = await res.json();
             console.log(data)
-            setItem(data.find(car => car.id === 1));
-        };
+            setItem(data.find(car => car.id === id))
+        }
+                setTimeout(() => {
+                    fetchData();
+                }, 2000);
 
-        setTimeout(() => {
-            fetchData();
-        }, 2000);
 
-    }, []);
+            }, [id]);
+            console.log(id)
 
-  return (
-    <div className='item-detail'> 
-        <h5 className='item-detail-name fonti' key={item.name}>{item.nombre}</h5>
-        <p className='item-detail-price fonti' key={item.price}>{item.moneda}{new Intl.NumberFormat('de-DE').format(item.precio)}.-</p>
-        <p className='item-detail-description' key={item.tituloCarcteristicas}>{item.TituloCarcteristicas}</p>
-        <ul>       
-            <li className='item-detail-caracteristicas' key={item.carac1}>{item.Carac1}</li> 
-            <li  className='item-detail-caracteristicas' key={item.carac2}>{item.Carac2}</li>
-            <li className='item-detail-caracteristicas' key={item.carac3}>{item.Carac3}</li>
-            <li className='item-detail-caracteristicas' key={item.carac4}>{item.Carac4}</li>
-        </ul>
-    </div>
-  )
+            return (
+                <div> 
+                    {Object.keys(item).length > 0 ? <DetailPage item={item} /> : <h1 className='loader'>CITROËN LOADING...</h1>}
+                </div>
+            )
 }
 
 
