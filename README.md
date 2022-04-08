@@ -1,3 +1,67 @@
+<!-- PROJECT LOGO -->
+<br />
+<div align="center">
+  <a>
+    <img src="https://github.com/Hache1979/citroenargentina/blob/main/Multimedia/CITROEN_Bloc_Marque_2016_RGB.jpg" alt="Logo" width="auto" height="100">
+  </a>
+
+  <h3 align="center">Citroën Argentina</h3>
+
+  <p align="center">
+    Smaller and faster version of the original Citroën Site
+    <br />
+    <a href="https://github.com/Hache1979/Citroen_React"><strong>Explore the docs »</strong></a>
+    <br />
+  </p>
+</div>
+
+
+
+<!-- TABLE OF CONTENTS -->
+<details>
+  <summary>Table of Contents</summary>
+  <ol>
+    <li>
+      <a href="#about-the-project">About The Project</a>
+      <ul>
+        <li><a href="#built-with">Built With</a></li>
+      </ul>
+    <li><a href="#Getting-Started-with-Create-React-App">Getting Started</a></li>
+    <li><a href="#usage">Usage</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ol>
+</details>
+
+
+
+<!-- ABOUT THE PROJECT -->
+## About The Project
+
+Citroen_Argentina is work in progress a react development, created as a small version of the current Citroën site. The project was built from scratch, and was empowered using react-Bootstrap plugins. The structure is simple and the site navegation is really intuitive (very easy to use). 
+
+* [React Citroën E-commerce (gif)](https://gifyu.com/image/SpBLG)
+
+
+<p align="right">(<a href="#top">back to top</a>)</p>
+
+
+
+### Built With
+
+* [React](https://es.reactjs.org)
+* [HTML](https://devdocs.io/html/)
+* [React-Bootstrap](https://react-bootstrap.github.io)
+* [JavaScript](https://devdocs.io/javascript/)
+
+<p align="right">(<a href="#top">back to top</a>)</p>
+
+## Usage
+
+The site can be used by rookie developers, in order to understand that is possible to create a very simple web-page with theirs first tools.
+
+<p align="right">(<a href="#top">back to top</a>)</p>
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
@@ -68,3 +132,15 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+<p align="right">(<a href="#top">back to top</a>)</p>
+
+
+<!-- CONTACT -->
+## Contact
+
+H. Soule - [Mail](hsoule79@gmail.com)
+
+Project Link: [Hache79](https://github.com/Hache1979/Citroen_React)
+
+<p align="right">(<a href="#top">back to top</a>)</p>
