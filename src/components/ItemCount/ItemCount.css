@@ -10,15 +10,15 @@
 }
 
 .btn-buy{
-    margin-left: 3vh;
+    margin-left: 2vh;
 }
 
 .btn-dec{
-    margin-left: 0.6vh;
+    margin-left: 0.5vh;
     background-color: red;
     border-color: red;
-    padding-right: 1.8vh;
-    padding-left: 1.8vh;
+    padding-right: 1.7vh;
+    padding-left: 1.7vh;
 }
 
 .btn-dec:hover{

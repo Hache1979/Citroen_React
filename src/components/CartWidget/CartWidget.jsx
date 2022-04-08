@@ -7,8 +7,10 @@ import AddIcon from "@material-ui/icons/Add";
 import RemoveIcon from "@material-ui/icons/Remove";
 import './CartWidget.css';
 
-function CartWidget() {
+function CartWidget(onAdd) {
     const [itemCount, setItemCount] = React.useState(0);
+
+    
 
     return (
         <div>

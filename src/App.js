@@ -13,6 +13,7 @@ import UniversoCitroen from './components/Pages/04UniversoCitroen';
 import Contactos from './components/Pages/05Contacto';
 import PageNotFound from './components/Pages/06PageNotFound';
 import Footer from './components/Footer/Footer';
+import Cart from './components/Cart/Cart';
 
 
 function App() {
@@ -26,6 +27,7 @@ function App() {
         <Route path='/Ofertas/*' element={<Ofertas/>} />
         <Route path='/UniversoCitroen' element={<UniversoCitroen/>} />
         <Route path='/Contacto' element={<Contactos/>} />
+        <Route path= '/Cart' element={<Cart/>} />
         <Route path='*' element={<PageNotFound/>} />
       </Routes>
       <Footer/>
