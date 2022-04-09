@@ -14,24 +14,27 @@ import Contactos from './components/Pages/05Contacto';
 import PageNotFound from './components/Pages/06PageNotFound';
 import Footer from './components/Footer/Footer';
 import Cart from './components/Cart/Cart';
+import CartProvider from './context/CartContext';
 
 
 function App() {
   return (
     <div className='my-app-component'>
-      <BrowserRouter>
-      <NavBoot/>
-      <Routes>
-        <Route path='/' element={<Home/>} />
-        <Route path='/Vehiculos' element={<Vehiculos/>} />
-        <Route path='/Ofertas/*' element={<Ofertas/>} />
-        <Route path='/UniversoCitroen' element={<UniversoCitroen/>} />
-        <Route path='/Contacto' element={<Contactos/>} />
-        <Route path= '/Cart' element={<Cart/>} />
-        <Route path='*' element={<PageNotFound/>} />
-      </Routes>
-      <Footer/>
-      </BrowserRouter>
+      <CartProvider>
+        <BrowserRouter>
+          <NavBoot />
+          <Routes>
+            <Route path='/' element={<Home />} />
+            <Route path='/Vehiculos' element={<Vehiculos />} />
+            <Route path='/Ofertas/*' element={<Ofertas />} />
+            <Route path='/UniversoCitroen' element={<UniversoCitroen />} />
+            <Route path='/Contacto' element={<Contactos />} />
+            <Route path='/Cart' element={<Cart />} />
+            <Route path='*' element={<PageNotFound />} />
+          </Routes>
+          <Footer />
+        </BrowserRouter>
+      </CartProvider>
     </div>
 
   );

@@ -1,12 +1,16 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useContext } from 'react';
 import './ItemDetailContainer.css';
 import { useParams } from 'react-router-dom';
 import ItemDetail from '../ItemDetail/ItemDetail';
+import { CartContext } from '../../context/CartContext';
 
 
 export default function ItemDetailContainer() {
 
     const { id } = useParams();
+
+    const { addToCart } = useContext(CartContext);
+
     const [item, setItem] = useState({});
     const [shopped, setShopped]= useState(false);
 
@@ -26,7 +30,7 @@ export default function ItemDetailContainer() {
     }, [id]);
 
     const onAdd = (count) => {
-        console.log(`${item.nombre} has been added to the cart. Quantity: ${count}`);
+        addToCart(item, count);
         setShopped(true)
     }
 
