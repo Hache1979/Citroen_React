@@ -17,6 +17,7 @@ import Cart from './components/Cart/Cart';
 import CartProvider from './context/CartContext';
 
 
+
 function App() {
   return (
     <div className='my-app-component'>

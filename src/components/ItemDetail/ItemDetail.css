@@ -45,3 +45,15 @@
     margin-top: 1.2rem;
 }
 
+.go-cart{
+    text-decoration: none;
+    padding: 10px;
+    background-color: #a3047e;
+    border-radius: 5px;
+    color: white;
+}
+
+.go-cart:hover{
+    background-color: #740159;
+    color: white;
+}

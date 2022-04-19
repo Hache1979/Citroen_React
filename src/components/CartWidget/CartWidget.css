@@ -10,3 +10,8 @@
     text-align: center;
     color: #333333;
 }
+
+.cart-button:hover{
+    background-color:rgb(255, 254, 254) !important;
+    color:black;
+}

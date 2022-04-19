@@ -24,7 +24,7 @@ export default function ItemDetail({ item, onAdd, shopped}) {
                         <li className='font-custom-carac'>{Carac4}</li>
                     </ul>
                     <Card2.Text className='font-custom-stock'key={"stock.id"}>Stock: {stock} </Card2.Text>
-                    {shopped ? <Card2.Text className='font-custom-stock'key={"shop.id"}><Link className="" to={'/Cart'}>PRODUCTO AGREGADO AL CARRITO</Link></Card2.Text> : <ItemCount onAdd={onAdd} stockUnit={stock} />}
+                    {shopped ? <Card2.Text className='font-custom-stock'key={"shop.id"}><Link className="go-cart" to={'/Cart'}>IR A CARRITO</Link></Card2.Text> : <ItemCount onAdd={onAdd} stockUnit={stock} />}
                 </Card2.Body>
             </Card2>
 

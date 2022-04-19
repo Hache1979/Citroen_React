@@ -4,8 +4,7 @@ import './ItemCount.css';
 
 function ItemsCount ({stockUnit, onAdd}) {
     const [count, setCount]= useState (1)
-   
-  
+
     const addUnits = () => {
         
         if (count < stockUnit){

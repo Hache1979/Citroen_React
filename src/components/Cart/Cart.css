@@ -1,0 +1,33 @@
+.shopping-cart-title{
+    font-family: "CitroenBlack";
+    font-size: 2.2rem;
+    padding: auto;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    text-align: center;
+    color: #333333;
+}
+
+.no-products{
+    font-family: "CitroenLight";
+    font-size: 1.5rem;
+    padding-top: 10rem;
+    text-align: center;
+    color: #333333;
+}
+
+.acceso-oferta{
+    font-family: "CitroenBlack";
+    font-size: 1.5rem;
+    color: #333333;
+    text-decoration: none;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20rem;
+}
+
+.acceso-oferta:hover{
+    color: #a90986;
+}

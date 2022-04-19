@@ -1,0 +1,53 @@
+.shopping-cart {
+    width: 50rem !important;
+    padding: 1rem !important;
+    margin: auto;
+    font-family: CitroenBlack;
+    font-size: 0.9rem;
+    text-align: center;
+}
+
+.remove-button{
+    font-family: CitroenBlack;
+    background-color: red;
+    border: none;
+    font-size: 0.9rem;
+    margin-top: 5px;
+}
+
+.remove-button:hover{
+    background-color: rgb(107, 5, 5);
+}
+
+.purchase{
+    margin-top: 11px;
+}
+
+.button-style-size{
+    font-family: CitroenBlack;
+    background-color: rgb(255, 254, 254);
+    border: none;
+    font-size: 0.9rem;
+    margin-top: 5px;
+}
+
+.button-style-cart {
+    font-family: CitroenBlack;
+    border: none;
+    font-size: 0.5rem;
+    margin-top: 0px;
+    margin-left: 1rem;
+    margin-right: 1rem
+}
+
+.plus{
+    background-color: darkorange;
+}
+
+.minus{
+    background-color: red;
+}
+
+.minus:hover{
+    background-color: rgb(107, 5, 5);
+}
