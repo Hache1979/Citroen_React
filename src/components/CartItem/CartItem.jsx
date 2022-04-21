@@ -4,7 +4,7 @@ import "./CartItem.css";
 
 
 const CartItem = ({ product, deleteItem }) => {
-    const imageCar = require(`../../assets/images/${product.item.imagenUrl}`)
+    // const imageCar = require(`../../assets/images/${product.item.imagenUrl}`)
 
     return (
         <div className='shopping-cart-Container'>
@@ -12,7 +12,7 @@ const CartItem = ({ product, deleteItem }) => {
                 <Container >
                     <Row>
                         <Col>
-                            <img src={imageCar} width="80" height="auto" alt={product.item.nombre} />
+                            <img src={product.item.imagenUrl} width="80" height="auto" alt={product.item.nombre} />
                         </Col>
                         <Col className="purchase">
                             {product.item.nombre}

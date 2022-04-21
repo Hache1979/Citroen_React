@@ -5,14 +5,14 @@ import "./ItemDetail.css";
 import { Link } from 'react-router-dom';
 
 export default function ItemDetail({ item, onAdd, shopped}) {
-    const imageCar = require(`../../assets/images/${item.imagenUrl}`)
+    // const imageCar = require(`../../assets/images/${item.imagenUrl}`)
 
-    const {nombre, moneda, precio, TituloCarcteristicas, Carac1, Carac2, Carac3, Carac4, stock} = item
+    const {nombre, moneda, precio, TituloCarcteristicas, Carac1, Carac2, Carac3, Carac4, stock, imagenUrl} = item
    
     return (
         <div>
             <Card2 className='car-card-custom-carac' style={{ width: '18rem' }}>
-                <Card2.Img className="car-detail-pic" variant="top" src={imageCar}/>
+                <Card2.Img className="car-detail-pic" variant="top" src={imagenUrl}/>
                 <Card2.Body>
                     <Card2.Title className='font-custom-name'>{nombre}</Card2.Title>
                     <Card2.Title className='font-custom-name'>{moneda} {new Intl.NumberFormat('de-DE').format(precio)+ ".-"}</Card2.Title >

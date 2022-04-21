@@ -4,12 +4,12 @@ import { Link } from "react-router-dom";
 import './Card.css';
 
 function Card(props) {
-    const imageName = require (`../../assets/images/${props.carDetails.imagenUrl}`)
+    // const imageName = require (`../../assets/images/${props.carDetails.imagenUrl}`)
 
     return (
         <div className="card-container">
             <Card1 className="card-style" style={{ width: '18rem' }}>
-                <Card1.Img variant="top" src={imageName} />
+                <Card1.Img variant="top" src={props.carDetails.imagenUrl} />
                 <Card1.Body>
                     <Card1.Title key={"nombre.id"}>{props.carDetails.nombre}</Card1.Title>
                     <Card1.Text key={"moneda.id"}>{props.carDetails.moneda} {new Intl.NumberFormat('de-DE').format(props.carDetails.precio)+ ".-"}</Card1.Text>
