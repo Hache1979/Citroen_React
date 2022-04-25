@@ -8,7 +8,7 @@ import "./Cart.css";
 
 
 export default function CartContainer() {
-  const { cartArray, deleteItem, TotalPrice } = useContext(CartContext);
+  const { cartArray, deleteItem } = useContext(CartContext);
 
   return (
     <div>
@@ -21,7 +21,7 @@ export default function CartContainer() {
       }
       {cartArray.map((product) => <CartItem key={product.item.id} product={product} deleteItem={deleteItem} />)}
       {cartArray.length > 0 &&
-        <EndPurchase TotalPrice={TotalPrice} />
+        <EndPurchase />
       }
     </div>
   )

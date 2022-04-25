@@ -2,8 +2,8 @@
   margin-bottom: 20px;
   border-radius: 5px;
   margin: auto;
-  margin-top: 10rem;
-  margin-bottom: 10rem;
+  margin-top: 5rem;
+  margin-bottom: 1rem;
   margin-left: 20rem;
 }
 
@@ -14,9 +14,10 @@
 }
 
 .shopping-sum-text{
-    font-family: CitroenLight;
+    font-family: CitroenBlack;
     font-size: 1rem;
     margin: 0.5rem;
+    color: rgb(149, 149, 149);
 }
 
 .price{
@@ -24,7 +25,7 @@
 }
 
 .total{
-    font-weight: bold;
+    color: black;
 }
 
 .checkout-btn{
@@ -35,4 +36,24 @@
     font-family: CitroenBlack;
     font-size: 1rem;
     cursor: pointer;
+}
+
+.back-to-offer-btn{
+    background-color: darkorange;
+    color: white;
+    border:   darkorange 1px solid;
+    padding: 10px;
+    font-family: CitroenBlack;
+    font-size: 1rem;
+    cursor: pointer;
+    margin-bottom: 5rem;
+}
+
+
+.back-to-offer{
+    padding-left: 58.6rem;
+}
+
+.back-to-offer-btn{
+    margin-bottom: 10rem;
 }
