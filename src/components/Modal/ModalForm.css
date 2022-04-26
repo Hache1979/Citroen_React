@@ -18,6 +18,14 @@
     color: grey;
 }
 
+.modal-label{
+    font-family: CitroenBlack;
+    font-size: 0.9rem;
+    text-align: justify;
+    margin: 0 auto;
+    color: grey;
+}
+
 .inputs{
 	width:310px;
     padding:7px 16px;

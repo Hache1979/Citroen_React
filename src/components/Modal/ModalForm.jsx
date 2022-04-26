@@ -19,20 +19,20 @@ const ModalForm = (props) => {
                 <h2 className='purchase-form-title'>FORMULARIO DE COMPRA</h2>
                 <p className='purchase-form-paragrah'>Finalice su compra Citroën, completando sus datos:</p>
                 <fieldset>
-                    <label htmlFor="name">NOMBRE:</label>
+                    <label className="modal-label"  htmlFor="name">NOMBRE:</label>
                     <input className="inputs" type="text" name="name" id="name" onChange={props.handleChange} value={props.order.buyer.name}
                     />
                 </fieldset>
                 <fieldset>
-                    <label htmlFor="lastname">APELLIDO:</label>
+                    <label className="modal-label" htmlFor="lastname">APELLIDO:</label>
                     <input className="inputs" type="text" name="lastname" id="lastname" onChange={props.handleChange} value={props.order.buyer.lastname} />
                 </fieldset>
                 <fieldset>
-                    <label htmlFor="phone">TÉLEFONO:</label>
+                    <label className="modal-label" htmlFor="phone">TÉLEFONO:</label>
                     <input className="inputs" type="number" name="phone" id="phone" onChange={props.handleChange} value={props.order.buyer.phone} />
                 </fieldset>
                 <fieldset>
-                    <label htmlFor="email">MAIL:</label>
+                    <label className="modal-label"  htmlFor="email">MAIL:</label>
                     <input className="inputs" type="mail" name="email" id="email" onChange={props.handleChange} value={props.order.buyer.email}
                     />
                 </fieldset>
