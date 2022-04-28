@@ -20,6 +20,10 @@
     .cart-title{
         padding-left: 0%;
     }
+
+      .widget-res{
+        padding-bottom: 50px !important;
+    }
 }
 
 @media screen and (max-width: 400px) {
