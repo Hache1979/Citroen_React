@@ -15,14 +15,12 @@ function SalesOffer() {
     useEffect(() => {
         const fetchData = async () => {
             const productosColeccion = collection(ddbb, 'Productos_Citroen');
-            console.log(productosColeccion)
             const productSnapshot = await getDocs (productosColeccion);
-            console.log(productSnapshot)
+           
 
             const productList = productSnapshot.docs.map((doc) => {
                 let productCitroen = doc.data()
                 productCitroen.id = doc.id;
-                console.log(productCitroen)
                 return productCitroen;
             })
 
@@ -40,30 +38,6 @@ function SalesOffer() {
         }, 2000);
 
     }, [categoria])
-
-
-
-    // useEffect(() => {
-    //     const fetchData = async () => {
-    //         const res = await fetch('http://localhost:3000/itemList.json')
-    //         console.log(res)
-    //         const data = await res.json();
-
-    //         setLoading(false)
-
-    //         if (categoria) {
-    //             setCitroen(data.filter(car => car.categoria === categoria))
-    //         } else {
-    //             setCitroen(data)
-    //         }
-    //     }
-    //     setTimeout(() => {
-    //         fetchData();
-    //     }, 2000);
-
-    // }, [categoria])
-
-
 
     return (
         <div className="salesOffer-container">

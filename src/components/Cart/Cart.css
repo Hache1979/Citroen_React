@@ -31,3 +31,21 @@
 .acceso-oferta:hover{
     color: #a90986;
 }
+
+@media screen and (max-width: 400px) {
+    .shopping-cart-title{
+        font-family: "CitroenBlack";
+        font-size: 1.5rem;
+        padding: auto;
+    }
+
+    .no-products{
+        font-family: "CitroenLight";
+        font-size: 1.2rem;
+    }
+
+    .acceso-oferta{
+        font-family: "CitroenBlack";
+        font-size: 1.2rem;
+    }
+}

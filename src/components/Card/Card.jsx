@@ -4,7 +4,6 @@ import { Link } from "react-router-dom";
 import './Card.css';
 
 function Card(props) {
-    // const imageName = require (`../../assets/images/${props.carDetails.imagenUrl}`)
 
     return (
         <div className="card-container">

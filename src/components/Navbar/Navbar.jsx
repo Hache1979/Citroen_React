@@ -19,7 +19,7 @@ function NavBoot() {
                             <Nav.Link as={"span"} className="text-white btn-hover"><Link className="navbar-custom" to={'/'}>HOME</Link></Nav.Link>
                             <Nav.Link as={"span"} className="text-white btn-hover"><Link className="navbar-custom" to={'/Vehiculos'}>VEHICULOS</Link></Nav.Link>
                             <Dropdown className="drop-menu-color">
-                                <Dropdown.Toggle className="drop-menu bck-color" variant="success" id="dropdown-basic"><Link className="navbar-custom" to={''}>OFERTAS</Link>
+                                <Dropdown.Toggle className="drop-menu bck-color" variant="success" id="dropdown-basic"><Link className="navbar-custom custom" to={''}>OFERTAS</Link>
                                 </Dropdown.Toggle>
                                 <Dropdown.Menu>
                                     <Dropdown.Item as={"span"} ><Link className='drop-down-sections' to={'/Ofertas/Category/Particulares'}>PARTICULARES</Link></Dropdown.Item>

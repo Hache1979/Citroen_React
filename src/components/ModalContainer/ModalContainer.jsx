@@ -55,10 +55,8 @@ const ModalContainer = (props) => {
     }
 
     const pushOrder = async () => {
-        console.log(order)
         const orderFirebase = collection(ddbb, 'Ordenes');
         const orderDoc = await addDoc(orderFirebase, order);
-        console.log(`Nº de Orden generada: ${orderDoc.id}`)
         setSuccessOrder(orderDoc.id);
     }
 

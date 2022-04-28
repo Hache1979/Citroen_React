@@ -16,9 +16,10 @@
 
 .car-detail-pic{
     width: 50%;
-    height: 15vw;
+    height: auto;
     object-fit: cover;
     margin-top: 10%;
+    margin-bottom: 10%;
 }
 
 .font-custom-name {
@@ -56,4 +57,58 @@
 .go-cart:hover{
     background-color: #740159;
     color: white;
+}
+
+@media screen and (max-width: 1350px) {
+    .car-card-custom-carac {
+        width: 80% !important;
+    }
+}
+
+
+@media screen and (max-width: 990px) {
+    .car-card-custom-carac {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .car-detail-pic{
+        width: 80%;
+        height: auto;
+        align-self: center;
+    }
+}
+    
+@media screen and (max-width: 400px) {
+    .car-card-custom-carac {
+        width: 90% !important;
+    }
+}
+    
+@media screen and (max-width: 300px) {
+    .car-card-custom-carac {
+        width: 80% !important;
+    }
+
+    .font-custom-titleCarac{
+        font-size: 0.7rem;
+    }
+
+    .font-custom-carac{
+        font-size: 0.7rem;
+    }
+
+    .font-custom-stock{
+        font-size: 0.7rem;
+    }
+
+    .font-custom-name {
+        font-size: 1rem;
+        font-family: "CitroenBlack";
+    }
+
+    .go-cart{
+        font-size: 0.7rem;
+    }
 }

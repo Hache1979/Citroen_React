@@ -1,13 +1,18 @@
 .shopping-cart {
-    width: 50rem !important;
-    padding: 1rem !important;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 50rem  ;
+    padding: 1rem;
     margin: auto;
     font-family: CitroenBlack;
     font-size: 0.9rem;
-    text-align: center;
+    border: 1px solid rgb(206, 205, 205);
+    border-radius: 5px;
+    align-items: center;
 }
 
-.remove-button{
+.remove-button {
     font-family: CitroenBlack;
     background-color: red;
     border: none;
@@ -15,15 +20,16 @@
     margin-top: 5px;
 }
 
-.remove-button:hover{
+.remove-button:hover {
     background-color: rgb(107, 5, 5);
 }
 
-.purchase{
+.purchase {
     margin-top: 11px;
+    font-size: 0.9rem;
 }
 
-.button-style-size{
+.button-style-size {
     font-family: CitroenBlack;
     background-color: rgb(255, 254, 254);
     border: none;
@@ -40,14 +46,56 @@
     margin-right: 1rem
 }
 
-.plus{
+.plus {
     background-color: darkorange;
 }
 
-.minus{
+.minus {
     background-color: red;
 }
 
-.minus:hover{
+.minus:hover {
     background-color: rgb(107, 5, 5);
 }
+
+
+@media screen and (max-width: 768px) {
+    .shopping-cart {
+        display: flex;
+        flex-direction: column;
+        gap: 0.5rem;
+        margin-left: 5%;
+        margin-right: 0%;
+        width: 90%;
+    }
+
+    .shopping-cart-img {
+        width: 100%;
+        height: auto;
+    }
+
+    .purchase {
+        margin-top: 0px;
+        margin-left: 0%;
+        margin-right: 0%;
+        font-size: 1.5rem;
+    }
+
+    .remove-button {
+        margin-top: 0px;
+        margin-left: 0%;
+        margin-right: 0%;
+        align-self: center;
+        width: 100%;
+    }
+
+}
+
+@media screen and (max-width: 400px){
+    .purchase{
+        font-size: 1.3rem;
+    }
+}
+
+
+    

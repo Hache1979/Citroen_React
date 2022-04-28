@@ -80,3 +80,14 @@
     border-color: rgba(145, 54, 54, 0.75);
 }
 
+@media screen and (max-width: 1040px) {
+    .font-face-cb {
+        font-size: 0.9rem;
+    } 
+
+    .custom{
+        font-size: 0.9rem;
+    }
+   
+}
+    

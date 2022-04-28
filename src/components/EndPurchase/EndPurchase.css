@@ -3,8 +3,7 @@
   border-radius: 5px;
   margin: auto;
   margin-top: 5rem;
-  margin-bottom: 1rem;
-  margin-left: 20rem;
+  margin-bottom: 10rem;
 }
 
 .shopping-cart-titles{
@@ -39,21 +38,49 @@
 }
 
 .back-to-offer-btn{
-    background-color: darkorange;
+    width: 100%;
+    background-color: rgb(255, 0, 0);
     color: white;
-    border:   darkorange 1px solid;
+    border:   red 1px solid;
     padding: 10px;
     font-family: CitroenBlack;
     font-size: 1rem;
     cursor: pointer;
-    margin-bottom: 5rem;
+    margin-top: 0.5rem;
+    border-radius: 5px;
 }
 
-
-.back-to-offer{
-    padding-left: 58.6rem;
+.back-to-offer-btn:hover{
+    background-color:green;
+    text-decoration: none;
+    border: none;
+    color: white;
+    transition: 0.2s;
 }
 
-.back-to-offer-btn{
-    margin-bottom: 10rem;
+@media screen and (max-width: 768px) {
+    .shopping-sum{
+        margin-left: 5%;
+        margin-right: 0%;
+        padding: 3%;
+        width: 90% !important;
+    } 
+
+    .shopping-cart-titles{
+        font-size: 0.8rem;
+        margin: 0.5rem;
+    }
+
+    .shopping-sum-text {
+        font-size: 0.8rem;
+    }
+
+    .checkout-btn{
+        font-size: 0.8rem;
+    }
+
+    .back-to-offer-btn{
+        font-size: 0.8rem;
+    }
+
 }

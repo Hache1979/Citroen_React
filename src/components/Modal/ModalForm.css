@@ -99,3 +99,105 @@
 .success-order-ofertas:hover{
     color: white;
 }
+    
+@media screen and (max-width: 400px) {
+    .purchase-form-title{
+        font-family: CitroenBlack;
+        font-size: 0.9rem;
+    }
+
+    .purchase-form-paragrah{
+        font-family: CitroenLight;
+        font-size: 0.8rem;
+        margin-bottom: 0.5em;
+        font-weight: bold;
+    }
+
+    .purchase-form-input{
+        font-family: CitroenBlack;
+        font-size: 0.8rem;
+        text-align: justify;
+        margin: 0 auto;
+        color: grey;
+    }
+
+    .form{
+        width: 20% !important;
+        height: auto;
+    }   
+    
+    .modal-label{
+        font-family: CitroenBlack;
+        font-size: 0.8rem;
+        text-align: justify;
+        margin: 0 auto;
+        color: grey;
+    }
+
+    .inputs{
+        width:90%;
+        padding:7px 16px;
+        margin:10px;
+        font-family: CitroenLight;
+        font-weight: bold;
+        font-size: 0.9rem;
+        display: flex;
+    }
+
+    .purchase-form-button{
+        font-family: CitroenBlack;
+        font-size: 0.9rem;
+        width: 100%;
+        margin-top: 0.5em;
+        background-color: darkorange;
+        color: white;
+        border: none;
+        border-radius: 0.5em;
+        padding: 0.5em;
+    }
+
+    .success-order-title{
+        font-family: CitroenBlack;
+        font-size: 0.9rem;
+        margin-top: 1em;
+    }
+
+    .success-order-paragraph{
+        font-family: CitroenLight;
+        font-size: 0.8rem;
+        margin-top: 0.5em;
+        margin-bottom: 0.5em;
+    }
+
+    .success-order-order{
+        font-family: CitroenBlack;
+        font-size: 0.9rem;
+        margin-top: 0.5em;
+        margin-bottom: 0.5em;
+    }
+
+    .success-order-btn{
+        font-family: CitroenBlack;
+        font-size: 0.9rem;
+        width: 100%;
+        margin-top: 0.5em;
+        background-color: darkorange;
+        border: none;
+        border-radius: 0.5em;
+        padding: auto;
+    }
+
+    .success-order-ofertas{
+        text-decoration: none;
+        color: white;
+    }
+
+    .css-panzw4{
+        font-family: CitroenBlack;
+        font-size: 0.8rem;
+        margin-top: 0.5em;
+        margin-bottom: 0.5em;
+        width: 260px !important;
+    }
+}
+

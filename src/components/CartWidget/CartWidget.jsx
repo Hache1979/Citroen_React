@@ -8,7 +8,6 @@ import IconButton from '@material-ui/core/IconButton';
 import {Link} from 'react-router-dom';
 import './CartWidget.css';  
 
-
 function CartWidget() {
     const {ProductCount} = useContext(CartContext);
 

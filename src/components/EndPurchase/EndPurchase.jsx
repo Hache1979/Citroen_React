@@ -1,15 +1,15 @@
 import React, { useContext, useState } from 'react';
-import { Card as Card4, Col, Container, Row, Button} from "react-bootstrap";
+import { Card as Card4, Col, Container, Row, Button } from "react-bootstrap";
 import { CartContext } from "../../context/CartContext";
 import "./EndPurchase.css";
-import {Link} from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import ModalContainer from '../ModalContainer/ModalContainer';
 
 
 export default function ShoppingCartSummary() {
 
     const [open, setOpen] = useState(false);
- 
+
     const { TotalPrice } = useContext(CartContext);
     const handleOpen = () => setOpen(true);
     const handleClose = () => setOpen(false);
@@ -51,11 +51,14 @@ export default function ShoppingCartSummary() {
                         </Row>
                     </Col>
                 </Container>
+                <div>
+                    <Link className="back-to-offer" to="/Ofertas">
+                        <button className="back-to-offer-btn ">REGRESAR A OFERTAS</button>
+                    </Link>
+                </div>
             </Card4>
-            <Link className="back-to-offer" to="/Ofertas">
-                <Button className="back-to-offer-btn">REGRESAR A OFERTAS</Button>
-            </Link>
-           <ModalContainer handleClose={handleClose} open={open}/>
+
+            <ModalContainer handleClose={handleClose} open={open} />
         </div>
     );
 }

@@ -36,3 +36,22 @@
     font-size: 1rem;
     margin-bottom: 0.4rem;
 }
+
+@media screen and (max-width: 300px) {
+    .units-quantity{
+        font-size: 0.8rem;
+    }
+
+    .btn-dec{
+        font-size: 0.4rem;
+    }
+
+    .btn-plus{
+        font-size: 0.4rem;
+    }
+
+    .btn-buy{
+        font-size: 0.4rem;
+    }
+}
+    

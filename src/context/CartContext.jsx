@@ -15,7 +15,6 @@ const CartProvider = ({ children }) => {
       });
       setCartArray(newCartArray);
     } else {
-    console.log(`${item.nombre} has been added to the cart. Quantity: ${count}.`);
     const newProduct = {
       item: item,
       count: count,
@@ -27,7 +26,6 @@ const CartProvider = ({ children }) => {
   }
 
   const deleteItem = (item) => {
-    console.log(item)
     const newCartArray = cartArray.filter(cartItem => (cartItem.item.id !== item.id));
     console.log(newCartArray);
     setCartArray(newCartArray);
