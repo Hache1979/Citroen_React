@@ -1,7 +1,8 @@
 import React from 'react'
+import './02Vehiculos.css'
 
 export default function Vehiculos() {
   return (
-    <div>Vehiculos</div>
+    <div className='vehicules'>VEHÍCULOS (WIP)</div>
   )
 }

@@ -5,7 +5,7 @@ import Card from "../Card/Card";
 import { collection, getDocs } from 'firebase/firestore';
 import ddbb from '../../Fiberbase';
 
-function SalesOffer() {
+function CardsContainer() {
     const { categoria } = useParams();
     const [citroen, setCitroen] = useState([])
     const [loading, setLoading] = useState(true)
@@ -52,4 +52,4 @@ function SalesOffer() {
     )
 }
 
-export default SalesOffer; 
+export default CardsContainer; 

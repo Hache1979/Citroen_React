@@ -5,7 +5,7 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 //Components//
-import NavBoot from './components/Navbar/Navbar';
+import NavBar from './components/NavBar/NavBar';
 import Home from './components/Pages/01Home';
 import Vehiculos from './components/Pages/02Vehiculos';
 import Ofertas from './components/Pages/03Ofertas';
@@ -23,7 +23,7 @@ function App() {
     <div className='my-app-component'>
       <CartProvider>
         <BrowserRouter>
-          <NavBoot />
+          <NavBar />
           <Routes>
             <Route path='/' element={<Home />} />
             <Route path='/Vehiculos' element={<Vehiculos />} />

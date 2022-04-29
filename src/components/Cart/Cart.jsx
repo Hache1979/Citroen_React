@@ -7,7 +7,7 @@ import EndPurchase from '../EndPurchase/EndPurchase';
 import "./Cart.css";
 
 
-export default function CartContainer() {
+export default function Cart() {
   const { cartArray, deleteItem } = useContext(CartContext);
 
   return (

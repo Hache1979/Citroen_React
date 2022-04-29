@@ -6,7 +6,7 @@ import { Link } from 'react-router-dom';
 import ModalContainer from '../ModalContainer/ModalContainer';
 
 
-export default function ShoppingCartSummary() {
+export default function EndPurchase() {
 
     const [open, setOpen] = useState(false);
 

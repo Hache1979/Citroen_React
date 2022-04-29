@@ -1,10 +1,10 @@
 import React from 'react';
-import './Navbar.css';
+import './NavBar.css';
 import { Navbar, Nav, Container, Form, FormControl, Button, Dropdown } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 
 
-function NavBoot() {
+function NavBar() {
     return (
         <div className='grid-container'>
             <Navbar expand="lg" className="color-nav font-face-cb">
@@ -46,4 +46,4 @@ function NavBoot() {
     );
 }
 
-export default NavBoot;
+export default NavBar;
