@@ -39,7 +39,7 @@
 
 Citroen_Argentina is work in progress a react development, created as a small version of the current Citroën site. The project was built from scratch, and was empowered using react-Bootstrap plugins. The structure is simple and the site navegation is really intuitive (very easy to use). 
 
-* [React Citroën E-commerce (gif)](https://gifyu.com/image/SpBLG)
+* [React Citroën E-commerce (gif)](https://gifyu.com/image/SszMy)
 
 
 <p align="right">(<a href="#top">back to top</a>)</p>
