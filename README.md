@@ -16,7 +16,6 @@
 </div>
 
 
-
 <!-- TABLE OF CONTENTS -->
 <details>
   <summary>Table of Contents</summary>
@@ -26,9 +25,9 @@
       <ul>
         <li><a href="#built-with">Built With</a></li>
       </ul>
-    <li><a href="#Getting-Started-with-Create-React-App">Getting Started</a></li>
-    <li><a href="#usage">Usage</a></li>
-    <li><a href="#contact">Contact</a></li>
+        <li><a href="#usage">Usage</a></li>
+        <li><a href="#Getting-Started">Getting Started</a></li>
+        <li><a href="#contact">Contact</a></li>
   </ol>
 </details>
 
@@ -61,8 +60,8 @@ The site can be used by rookie developers, in order to understand that is possib
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
+## Getting Started
 
-# Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
@@ -134,6 +133,7 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
 
 <p align="right">(<a href="#top">back to top</a>)</p>
+
 
 
 <!-- CONTACT -->
