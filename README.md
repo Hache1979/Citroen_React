@@ -37,7 +37,7 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-Citroen_Argentina is work in progress a react development, created as a small version of the current Citroën site. The project was built from scratch, and was empowered using react-Bootstrap plugins. The structure is simple and the site navegation is really intuitive (very easy to use). 
+Citroen_Argentina is a react E-commerce development, created as a small version of the current Citroën site. The project was built from scratch, and was empowered using react-Bootstrap plugins. The structure is simple and the site navegation is really intuitive (very easy to use). 
 
 * [React Citroën E-commerce (gif)](https://gifyu.com/image/SszMy)
 
