@@ -6,23 +6,23 @@ const CartProvider = ({ children }) => {
   const [cartArray, setCartArray] = useState([]);
 
   const addToCart = (item, count) => {
-    if(ProdIsInCart(item.id)) {
+    if (ProdIsInCart(item.id)) {
       const newCartArray = cartArray.map(product => {
-        if(product.item.id === item.id) {
+        if (product.item.id === item.id) {
           product.count += count;
         }
         return product;
       });
       setCartArray(newCartArray);
     } else {
-    const newProduct = {
-      item: item,
-      count: count,
-    };
-    setCartArray([...cartArray, newProduct]);
-    ProductCount();
+      const newProduct = {
+        item: item,
+        count: count,
+      };
+      setCartArray([...cartArray, newProduct]);
+      ProductCount();
     }
-    
+
   }
 
   const deleteItem = (item) => {
@@ -44,11 +44,26 @@ const CartProvider = ({ children }) => {
     return total;
   }
 
-  const TotalPrice  = () => {
+  const TotalPrice = () => {
     const totalFinal = cartArray.reduce((acc, curr) => acc + curr.item.precio * curr.count, 0);
     return totalFinal;
   }
-  
+
+  const validateMail = (mail) => {
+    const re = /^(([^<>()\]\\.,;:\s@"]+(\.[^<>()\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+    return re.test(String(mail).toLowerCase());
+  }
+
+  const phoneValidation = (phone) => {
+    const re = /^[0-9]{10}$/;
+    return re.test(String(phone).toLowerCase());
+  }
+
+  const validateName = (name) => {
+    const re = /^[A-Za-z][A-Za-z]+([A-Za-z][A-Za-z]+)*/;
+    return re.test(String(name).toLowerCase());
+  }
+
 
   const value = {
     cartArray,
@@ -58,9 +73,11 @@ const CartProvider = ({ children }) => {
     ProdIsInCart,
     ProductCount,
     TotalPrice,
+    validateMail,
+    phoneValidation,
+    validateName,
   };
 
- 
 
   return (
     <CartContext.Provider value={value}>

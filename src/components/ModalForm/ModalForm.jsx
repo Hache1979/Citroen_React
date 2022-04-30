@@ -2,6 +2,7 @@ import React from 'react'
 import "./ModalForm.css"
 
 const ModalForm = (props) => {
+
     return (
         <div>
             {props.successOrder ? (
@@ -21,20 +22,20 @@ const ModalForm = (props) => {
                 <fieldset>
                     <label className="modal-label"  htmlFor="name">NOMBRE:</label>
                     <input className="inputs" type="text" name="name" id="name" onChange={props.handleChange} value={props.order.buyer.name}
-                    />
+                    required/>
                 </fieldset>
                 <fieldset>
                     <label className="modal-label" htmlFor="lastname">APELLIDO:</label>
-                    <input className="inputs" type="text" name="lastname" id="lastname" onChange={props.handleChange} value={props.order.buyer.lastname} />
+                    <input className="inputs" type="text" name="lastname" id="lastname" onChange={props.handleChange} value={props.order.buyer.lastname} required/>
                 </fieldset>
                 <fieldset>
-                    <label className="modal-label" htmlFor="phone">TÉLEFONO:</label>
-                    <input className="inputs" type="number" name="phone" id="phone" onChange={props.handleChange} value={props.order.buyer.phone} />
+                    <label className="modal-label" htmlFor="phone">TÉLEFONO (Número de área sin el 15):</label>
+                    <input className="inputs" type="number" name="phone" id="phone" onChange={props.handleChange} value={props.order.buyer.phone} required />
                 </fieldset>
                 <fieldset>
                     <label className="modal-label"  htmlFor="email">MAIL:</label>
                     <input className="inputs" type="mail" name="email" id="email" onChange={props.handleChange} value={props.order.buyer.email}
-                    />
+                    required/>
                 </fieldset>
                 <button className='purchase-form-button'>ENVIAR</button>
             </form>

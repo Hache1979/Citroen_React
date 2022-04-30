@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import { CartContext } from "../../context/CartContext";
 import { useContext } from 'react';
-import ModalForm from '../Modal/ModalForm';
+import ModalForm from '../ModalForm/ModalForm';
 import Box from '@mui/material/Box';
 import Modal from '@mui/material/Modal';
 import ddbb from '../../Fiberbase';
@@ -21,7 +21,7 @@ const style = {
 };
 
 const ModalContainer = (props) => {
-    const { TotalPrice, cartArray } = useContext(CartContext);
+    const { TotalPrice, cartArray, validateMail, phoneValidation, validateName } = useContext(CartContext);
 
     const [order, setOrder] = useState(
         {
@@ -62,9 +62,8 @@ const ModalContainer = (props) => {
 
     const handleSubmit = (e) => {
         e.preventDefault();
-        if(order && order.buyer.name && order.buyer.lastname && order.buyer.email && order.buyer.phone) {pushOrder()}
-        else{
-            alert('Por favor, complete todos los campos')
+        if (validateMail(order.buyer.email) && phoneValidation(order.buyer.phone) && validateName(order.buyer.name) && validateName(order.buyer.lastname)) {
+            pushOrder();
         }
     }
 
