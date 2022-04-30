@@ -16,7 +16,6 @@
 </div>
 
 
-
 <!-- TABLE OF CONTENTS -->
 <details>
   <summary>Table of Contents</summary>
@@ -26,9 +25,9 @@
       <ul>
         <li><a href="#built-with">Built With</a></li>
       </ul>
-    <li><a href="#Getting-Started-with-Create-React-App">Getting Started</a></li>
-    <li><a href="#usage">Usage</a></li>
-    <li><a href="#contact">Contact</a></li>
+        <li><a href="#usage">Usage</a></li>
+        <li><a href="#Getting-Started">Getting Started</a></li>
+        <li><a href="#contact">Contact</a></li>
   </ol>
 </details>
 
@@ -37,9 +36,9 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-Citroen_Argentina is work in progress a react development, created as a small version of the current Citroën site. The project was built from scratch, and was empowered using react-Bootstrap plugins. The structure is simple and the site navegation is really intuitive (very easy to use). 
+Citroen_Argentina is a react E-commerce development, created as a small version of the current Citroën site. The project was built from scratch, and was empowered using react-Bootstrap plugins. The structure is simple and the site navegation is really intuitive (very easy to use). 
 
-* [React Citroën E-commerce (gif)](https://gifyu.com/image/SpBLG)
+* [React Citroën E-commerce (gif)](https://gifyu.com/image/SszMy)
 
 
 <p align="right">(<a href="#top">back to top</a>)</p>
@@ -61,8 +60,8 @@ The site can be used by rookie developers, in order to understand that is possib
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
+## Getting Started
 
-# Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
@@ -134,6 +133,7 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
 
 <p align="right">(<a href="#top">back to top</a>)</p>
+
 
 
 <!-- CONTACT -->
