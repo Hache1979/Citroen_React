@@ -22,20 +22,24 @@ const ModalForm = (props) => {
                 <fieldset>
                     <label className="modal-label"  htmlFor="name">NOMBRE:</label>
                     <input className="inputs" type="text" name="name" id="name" onChange={props.handleChange} value={props.order.buyer.name}
-                    required/>
+                    />
+                    <small>Ingrese su nombre</small>
                 </fieldset>
                 <fieldset>
                     <label className="modal-label" htmlFor="lastname">APELLIDO:</label>
-                    <input className="inputs" type="text" name="lastname" id="lastname" onChange={props.handleChange} value={props.order.buyer.lastname} required/>
+                    <input className="inputs" type="text" name="lastname" id="lastname" onChange={props.handleChange} value={props.order.buyer.lastname} />
+                    <small>Ingrese su apellido</small>
                 </fieldset>
                 <fieldset>
                     <label className="modal-label" htmlFor="phone">TÉLEFONO (Número de área sin el 15):</label>
-                    <input className="inputs" type="number" name="phone" id="phone" onChange={props.handleChange} value={props.order.buyer.phone} required />
+                    <input className="inputs" type="number" name="phone" id="phone" onChange={props.handleChange} value={props.order.buyer.phone}  />
+                    <small>Ingrese su telefono</small>
                 </fieldset>
                 <fieldset>
                     <label className="modal-label"  htmlFor="email">MAIL:</label>
                     <input className="inputs" type="mail" name="email" id="email" onChange={props.handleChange} value={props.order.buyer.email}
-                    required/>
+                    />
+                      <small>Ingrese su correo correcto</small>
                 </fieldset>
                 <button className='purchase-form-button'>ENVIAR</button>
             </form>

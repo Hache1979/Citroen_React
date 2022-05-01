@@ -48,21 +48,23 @@ const CartProvider = ({ children }) => {
     const totalFinal = cartArray.reduce((acc, curr) => acc + curr.item.precio * curr.count, 0);
     return totalFinal;
   }
+  
+  const validateName = (name) => {
+    const re = /^[a-zA-ZÀ-ÿ\u00f1\u00d1]+(\s*[a-zA-ZÀ-ÿ\u00f1\u00d1]*)*[a-zA-ZÀ-ÿ\u00f1\u00d1]+$/g;
+    return re.test(String(name).toLowerCase());
+  }
+  
+  const phoneValidation = (phone) => {
+    const re = /^[0-9]{10}$/;
+    return re.test(String(phone).toLowerCase());
+  }
 
   const validateMail = (mail) => {
     const re = /^(([^<>()\]\\.,;:\s@"]+(\.[^<>()\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
     return re.test(String(mail).toLowerCase());
   }
 
-  const phoneValidation = (phone) => {
-    const re = /^[0-9]{10}$/;
-    return re.test(String(phone).toLowerCase());
-  }
 
-  const validateName = (name) => {
-    const re = /^[A-Za-z][A-Za-z]+([A-Za-z][A-Za-z]+)*/;
-    return re.test(String(name).toLowerCase());
-  }
 
 
   const value = {

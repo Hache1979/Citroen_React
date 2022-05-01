@@ -65,6 +65,44 @@ const ModalContainer = (props) => {
         if (validateMail(order.buyer.email) && phoneValidation(order.buyer.phone) && validateName(order.buyer.name) && validateName(order.buyer.lastname)) {
             pushOrder();
         }
+        else{
+            const smallTags = document.getElementsByTagName('small')
+            const inputTags = document.getElementsByTagName('input')
+            console.log(inputTags)
+            if(!validateName(order.buyer.name)){
+                smallTags[0].style.display = 'block'
+                inputTags[1].style.border = '1px solid red'
+            }
+            else{
+                smallTags[0].style.display = 'none'
+                inputTags[1].style.borderColor = '#ced4da'  
+            }
+            if(!validateName(order.buyer.lastname)){
+                smallTags[1].style.display = 'block'
+                inputTags[2].style.border = '1px solid red'
+            }
+            else{
+                smallTags[1].style.display = 'none'
+                inputTags[2].style.borderColor = '#ced4da'
+            }
+            if (!phoneValidation(order.buyer.phone)) {
+                smallTags[2].style.display = 'block';
+                inputTags[3].style.border = '1px solid red';
+            }
+            else{
+                smallTags[2].style.display = 'none';
+                inputTags[3].style.border = '#ced4da';
+            }
+            if (!validateMail(order.buyer.email)) {
+                smallTags[3].style.display = 'block';
+                inputTags[4].style.border = '1px solid red';
+            }
+            else{
+                smallTags[3].style.display = 'none';
+                inputTags[4].style.border = '#ced4da';
+            }
+
+        }
     }
 
     return (

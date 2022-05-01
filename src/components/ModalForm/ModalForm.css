@@ -36,6 +36,17 @@
     display: flex;
 }
 
+small{
+    font-family: CitroenLight;
+    font-size: 0.7rem;
+    color: red;
+    font-weight: bold;
+    position: absolute;
+    margin-top: -12px;
+    margin-left: 10px;
+    display: none;
+}
+
 .purchase-form-button{
     font-family: CitroenBlack;
     font-size: 1rem;
