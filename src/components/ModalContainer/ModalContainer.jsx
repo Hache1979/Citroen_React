@@ -68,7 +68,6 @@ const ModalContainer = (props) => {
         else{
             const smallTags = document.getElementsByTagName('small')
             const inputTags = document.getElementsByTagName('input')
-            console.log(inputTags)
             if(!validateName(order.buyer.name)){
                 smallTags[0].style.display = 'block'
                 inputTags[1].style.border = '1px solid red'
@@ -101,7 +100,6 @@ const ModalContainer = (props) => {
                 smallTags[3].style.display = 'none';
                 inputTags[4].style.border = '#ced4da';
             }
-
         }
     }
 

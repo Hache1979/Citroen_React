@@ -4,12 +4,10 @@ import { CartContext } from "../../context/CartContext";
 import "./EndPurchase.css";
 import { Link } from 'react-router-dom';
 import ModalContainer from '../ModalContainer/ModalContainer';
-import { formLabelClasses } from '@mui/material';
-
 
 export default function EndPurchase() {
 
-    const [open, setOpen] = useState(formLabelClasses);
+    const [open, setOpen] = useState(false);
 
     const { TotalPrice } = useContext(CartContext);
     const handleOpen = () => setOpen(true);
