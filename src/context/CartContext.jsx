@@ -64,9 +64,6 @@ const CartProvider = ({ children }) => {
     return re.test(String(mail).toLowerCase());
   }
 
-
-
-
   const value = {
     cartArray,
     addToCart,
@@ -75,9 +72,9 @@ const CartProvider = ({ children }) => {
     ProdIsInCart,
     ProductCount,
     TotalPrice,
-    validateMail,
-    phoneValidation,
     validateName,
+    phoneValidation,
+    validateMail,
   };
 
 
